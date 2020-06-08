@@ -1,0 +1,30 @@
+{% extends 'headerPage.html' %}
+
+{% block content%}
+
+    <h2></h2>
+
+    
+    <br>
+   
+    <form method="post" enctype="multipart/form-data" action="predictImage">
+  
+ {% csrf_token %}
+ <div ><label >Seleccione su imagen aqui:</label> 
+ <input name="filePath" type="file" class="Select"><br><br>
+ <br>
+
+ 
+ <input type="submit" value="Predecir" ></div>
+
+ <h1>La prediccion es:  {{predictedLabel}}</h1>
+ <img src={{filePathName}} >
+ {{filePathName}}
+
+        <br>
+        <h1>Probabilidad: {{ porcentaje }} %</h1>
+</form>
+<br>
+
+
+{% endblock %}

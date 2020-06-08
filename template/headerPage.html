@@ -1,0 +1,164 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+     <title>CNN</title>
+
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+     <meta name="description" content="">
+     <meta name="keywords" content="">
+     <meta name="author" content="Tooplate">
+     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+     <style type="text/css">
+          body {
+               font-family: "Roboto", Arial, sans-serif;
+               min-height: 100vh;
+               background-color: #101010;
+          }
+
+          h2 {
+               color: aliceblue;
+          }
+
+          .Select{
+               color: #fcfcfc;
+          }
+
+          h1 {
+               font-size: calc(2.8em + 2.6vw);
+               font-weight: 700;
+               letter-spacing: .01em;
+               padding: 10rem 0 0 4.5rem;
+               text-shadow: .022em .022em .022em #111;
+               color: #fff;
+          }
+
+          h3 {
+
+               color: black;
+          }
+
+          p {
+               font-size: calc(2em + .25vw);
+               font-weight: 400;
+               line-height: 2;
+               margin-bottom: 1.5em;
+               color: #fcfcfc;
+          }
+
+          a {
+               font-size: calc(2em + .25vw);
+               font-weight: 400;
+               line-height: 2;
+               margin-bottom: 1.5em;
+               color: #fcfcfc;
+          }
+
+          label {
+               font-size: calc(2em + .25vw);
+               font-weight: 400;
+               line-height: 2;
+               margin-bottom: 1.5em;
+               color: #fcfcfc;
+          }
+
+          header::before {
+               content: "";
+               display: block;
+               position: absolute;
+               left: 0;
+               bottom: 6em;
+               width: 100%;
+               height: calc(var(--heading-height) + 10em);
+               z-index: -1;
+               transform: skewY(-3.5deg);
+               background:
+                    linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)),
+                    url(https://images.unsplash.com/photo-1495464101292-552d0b52fe41?auto=format&fit=crop&w=1350&q=80) no-repeat center,
+                    linear-gradient(#4e4376, #2b5876);
+               background-size: cover;
+               border-bottom: .2em solid #fff;
+          }
+
+          footer {
+               background: aliceblue;
+               padding: 50px;
+               width: 100%;
+               border-radius: 0;
+               position: relative;
+          }
+     </style>
+
+
+     <!-- MAIN CSS -->
+
+</head>
+
+<body>
+
+     <div class="container">
+          <!-- MENU -->
+          <header>
+               <section>
+                    <div class="container">
+
+                         <div>
+                              <button>
+                                   <span class="icon icon-bar"></span>
+                                   <span class="icon icon-bar"></span>
+                                   <span class="icon icon-bar"></span>
+                              </button>
+
+                              <!-- lOGO TEXT HERE -->
+                              <!--<a href="" class="navbar-brand"><i class="fa fa-h-square"></i>Predecir</a>-->
+                         </div>
+
+                         <!-- MENU LINKS -->
+                         <div>
+                              <ul>
+                                   <li><a href="/" class="smoothScroll">Home</a></li>
+                                   <li><a href="viewDataBase" class="smoothScroll">Galeria</a></li>
+                              </ul>
+                         </div>
+
+                    </div>
+               </section>
+          </header>
+     </div>
+
+
+     <!-- HOME -->
+
+
+     <div class="container">
+          {% block content%}
+          {% endblock %}
+
+     </div>
+
+     <!-- FOOTER -->
+     <footer>
+          <div class="container">
+               <div>
+                    <div>
+                         <div>
+                              <div>
+                                   <h3>Copyright Realizado por Bryam Barrera, Rene Panjon</h3>
+                              </div>
+                         </div>
+                           
+                    </div>
+
+               </div>
+          </div>
+     </footer>
+
+
+
+</body>
+
+</html>
